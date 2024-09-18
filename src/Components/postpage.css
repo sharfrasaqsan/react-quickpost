@@ -1,0 +1,91 @@
+/* Container for the post page */
+.post-page {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Post article styling */
+.post-page-article {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin-bottom: 20px;
+}
+
+/* Post title */
+.post-page-title {
+  font-size: 2rem;
+  color: #282c34;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* Post date */
+.post-page-date {
+  font-size: 0.9rem;
+  color: #6c757d; /* Muted color for the date */
+  margin-bottom: 20px;
+}
+
+/* Post body text */
+.post-page-body {
+  font-size: 1.1rem;
+  color: #343a40; /* Dark color for readability */
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Actions container */
+.post-page-actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* Buttons */
+.post-page-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn {
+  background-color: #61dafb; /* Light blue for edit button */
+  color: #fff;
+}
+
+.edit-btn:hover {
+  background-color: #21a1f1;
+}
+
+.delete-btn {
+  background-color: #ff6b6b; /* Red for delete button */
+  color: #fff;
+}
+
+.delete-btn:hover {
+  background-color: #ff4c4c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .post-page-article {
+    padding: 20px;
+  }
+
+  .post-page-title {
+    font-size: 1.5rem;
+  }
+
+  .post-page-body {
+    font-size: 1rem;
+  }
+
+  .post-page-actions {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

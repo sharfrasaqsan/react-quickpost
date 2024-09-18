@@ -1,0 +1,96 @@
+/* Header container */
+.header {
+  background-color: #282c34; /* Dark background */
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Logo */
+.header-logo h2 {
+  color: #ffffff;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.header-logo-link {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.header-logo-link:hover {
+  color: #61dafb; /* Light blue hover effect */
+}
+
+/* Navigation */
+.header-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-nav-list {
+  display: flex;
+  gap: 20px;
+}
+
+.header-nav-item {
+  list-style: none;
+}
+
+.header-nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.header-nav-link:hover {
+  color: #61dafb;
+}
+
+/* Search Form */
+.header-search-form {
+  display: flex;
+  align-items: center;
+}
+
+.header-search-label {
+  display: none;
+}
+
+.header-search-input {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.header-search-input:focus {
+  box-shadow: 0 0 5px rgba(97, 218, 251, 0.7); /* Light blue shadow */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  .header-nav-list {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header-search-input {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

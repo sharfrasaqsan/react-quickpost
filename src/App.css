@@ -3,3 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Container to ensure footer is at the bottom of the viewport */
+.App {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  min-height: 100vh; /* Full viewport height */
+}
+
+/* Main content area should expand to fill space */
+.main-content {
+  flex: 1; /* Takes up remaining space */
+}

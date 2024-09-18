@@ -1,0 +1,18 @@
+/* Footer styles */
+.footer {
+  background-color: #282c34; /* Dark background */
+  color: #ffffff; /* White text */
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  width: 100%; /* Full width */
+  position: relative; /* Adjust positioning relative to content */
+  bottom: 0; /* Stick to the bottom */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px;
+  }
+}
